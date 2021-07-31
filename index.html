@@ -310,13 +310,17 @@
 				</div>
 		</div>
 		</div>
-		<a href="#TESTIMONIALS"><button class="arrow4">&#11167</button></a>
+		<!-- <a href="#TESTIMONIALS"><button class="arrow4">&#11167</button></a> -->
 	</div>
 
 
 
 	<!-- testimonials -->
+<<<<<<< HEAD
+	<!-- <div class="testimonials">
+=======
 <!-- 	<div class="testimonials">
+>>>>>>> 76c8dd41a251ac6260434847ad478151f6883efc
 		<h1><a name="TESTIMONIALS">TESTIMONIALS</a></h1>
 		<div class="container">
 			
@@ -332,33 +336,38 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-					<input type="text" placeholder="Your Name">
+					<input id="Full_Name" type="text" placeholder="Full Name">
 				</div>
 				<div class="col-sm-4">
-					<input type="email" placeholder="example123@domain.com">
+					<input id="Email_ID" type="email" placeholder="Email ID">
 				</div>
 				<div class="col-sm-4">
-					<input type="text" placeholder="Mobile Number">
+					<input id="Mobile_Number" type="text" placeholder="Mobile Number">
 				</div>
 			</div>
 			<br>
 
 			<div class="row">
 				<div class="col-sm-4">
-					<input type="text" placeholder="Your Name">
+					<input id="people" type="number" placeholder="Number of people">
 				</div>
 				<div class="col-sm-4">
-					<input type="date">
+					<input id="date" type="date" placeholder="DATE">
 				</div>
 				<div class="col-sm-4">
-					<input type="text" placeholder="Mobile Number">
+					<select id="Time_slot" name="Time_slot">
+						<option value="aaaaa">Time Slot</option>
+						<option value="10:00am - 12:30pm">10:00am - 12:30pm</option>
+						<option value="1:00pm - 3:30pm">1:00pm - 3:30pm</option>
+						<option value="4:00pm - 8:00pm">4:00pm - 8:00pm</option>
+					</select>
 				</div>
 			</div>
 			<br>
 
 			<div class="row">
 				<div class="col-sm-12">
-					<button><a href="#">BOOK</a></button>
+					<button onclick="book()"><a href="#">BOOK</a></button>
 				</div>
 			</div>
 		</div>
@@ -556,10 +565,10 @@
 			<div class="col-md-4">
 				<div class="row">
 					<div class="col-sm-6">
-						<input type="email" placeholder="email">
+						<input id="Email_subscribe" type="email" placeholder="email">
 					</div>
 					<div class="col-sm-6">
-						<button><a href="#">Subscribe</a></button>
+						<button id="subscribe" onclick="subscribe()"><a href="#">Subscribe</a></button>
 					</div>
 				</div>
 			</div>
@@ -672,7 +681,7 @@
 			</div>
 			<div class="copy">
 						<p>
-							&copy Copyright 2019 Aditi Seal | All Rights Reserved
+							&copy Copyright 2020 Aditi Seal | All Rights Reserved
 						</p>
 					</div>
 			</div>

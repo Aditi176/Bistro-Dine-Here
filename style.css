@@ -99,7 +99,6 @@ body{
 .main__nav ul{
 	display: flex;
 	justify-content: flex-end;
-	background-color: ;
 	padding: 20px 0px;
 	margin: 0px;
 	list-style: none;
@@ -673,7 +672,6 @@ body{
 }
 
 .book_table input{
-	background-color: ;
 	width: 100%;
 	height: 100%;
 	padding: 8px 0 8px 4px;
@@ -748,11 +746,6 @@ body{
 	height: 100%;
 	display: none;
 	border: 2px solid white;
-}
-
-.blog .col-sm-4{
-	
-
 }
 
 .blog .col-sm-4 img{

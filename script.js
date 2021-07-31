@@ -6,7 +6,13 @@ function book() {
     Date1 = document.getElementById("date").value;
     Time = document.getElementById("Time_slot").value;
     
-    alert("Hello " + Name + ". Table booked successfully at  BISTRO!  " + "\n\nBooking details: \nName: " + Name + "\nEmail: " + Email + "\nMobile: " + Mobile + "\nNumber of people: " + People + "\nDate: " + Date1+ "\nTime: " + Time)
+    if (Name == false || Email == false || Mobile == false || People == false || Date1 == false || Time == "Time Slot") {
+        alert("Please fill all the fields!")
+    }
+    else{
+        alert("Hello " + Name + ". Table booked successfully at  BISTRO!  " + "\n\nBooking details: \nName: " + Name + "\nEmail: " + Email + "\nMobile: " + Mobile + "\nNumber of people: " + People + "\nDate: " + Date1+ "\nTime: " + Time)
+    }
+    
 }
 
 

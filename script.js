@@ -11,9 +11,19 @@ function book() {
 
 
 function subscribe() {
-    Email = document.getElementById("Email_subscribe").value;
-    if (Email) {
+    Email1 = document.getElementById("Email_subscribe").value;
+    if (Email1) 
+    {
         alert("Subscribed !");
+        // Email.send({
+        //   Host: "alt2.gmail-smtp-in.l.google.com",
+        //   Username: "techadiyt@gmail.com",
+        //   Password: "tech987#",
+        //   To: "Email1",
+        //   From: "techadiyt@gmail.com",
+        //   Subject: "Subscribed to BISTRO",
+        //   Body: "Thankyou for subscribing in BISTRO !",
+        // }).then((message) => alert("mail sent successfully"));
     }
     else{
         alert("Enter an Email ID to subscribe !")

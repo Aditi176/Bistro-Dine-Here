@@ -704,18 +704,13 @@ body{
 	border-radius: 6px;
 	font-family: 'Audiowide', cursive;
 	font-size: 20px;
+	text-decoration: none;
+	color: white;
 }
 
 .book_table .col-sm-12 button:hover{
 	cursor: pointer;
 	background-image: linear-gradient(to bottom, limegreen, green);
-}
-
-
-.book_table .col-sm-12 button a{
-	text-decoration: none;
-	color: white;
-
 }
 
 .arrow6{
@@ -942,9 +937,6 @@ body{
 	cursor: pointer;
 	background-image: linear-gradient(to bottom, green, limegreen);
 	padding: 6px 10px;
-}
-
-.subscribe .col-sm-6 button a{
 	text-decoration: none;
 	color: white;
 	font-family: 'Audiowide', cursive;

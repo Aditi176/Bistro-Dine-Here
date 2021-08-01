@@ -8,6 +8,10 @@ h1,h2{
 	margin: 0;
 }
 
+#alertbox{
+	background-color: red;
+}
+
 body{
 	margin: 0;
 	padding: 0px;

@@ -1,3 +1,5 @@
+// For booking table:
+
 function book() {
     Name = document.getElementById("Full_Name").value;
     Email = document.getElementById("Email_ID").value;
@@ -15,6 +17,9 @@ function book() {
     
 }
 
+
+
+// For email subscription:
 
 document.getElementById("form_subscribe").onsubmit = 
 function subscribe() {
@@ -44,3 +49,8 @@ function subscribe() {
     document.getElementById("Email_subscribe").value = "";
     
 }
+
+
+// For customized alert box:
+
+window.alert.Body

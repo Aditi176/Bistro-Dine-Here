@@ -16,20 +16,25 @@ function book() {
 }
 
 
-function subscribe() {
-    Email1 = document.getElementById("Email_subscribe").value;
+document.getElementById("form_subscribe").onsubmit = function subscribe() {
+    const Email1 = document.getElementById("Email_subscribe").value;
     if (Email1) 
     {
-        alert("Subscribed !");
-        // Email.send({
-        //   Host: "alt2.gmail-smtp-in.l.google.com",
-        //   Username: "techadiyt@gmail.com",
-        //   Password: "tech987#",
-        //   To: "Email1",
-        //   From: "techadiyt@gmail.com",
-        //   Subject: "Subscribed to BISTRO",
-        //   Body: "Thankyou for subscribing in BISTRO !",
-        // }).then((message) => alert("mail sent successfully"));
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "bistrodinehere@gmail.com",
+          Password: "bistro#987",
+          To: Email1,
+          From: "bistrodinehere@gmail.com",
+          Subject: "Subscribed to BISTRO",
+          Body: "Thankyou for subscribing in BISTRO !",
+        }).then((message) => {
+          if (message == "OK") {
+            alert("Subscribed successfully !");
+          } else {
+            alert("Aww Snap! Error occurred while subscribing !");
+          }
+        });
     }
     else{
         alert("Enter an Email ID to subscribe !")

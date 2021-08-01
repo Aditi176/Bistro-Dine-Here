@@ -16,7 +16,8 @@ function book() {
 }
 
 
-document.getElementById("form_subscribe").onsubmit = function subscribe() {
+document.getElementById("form_subscribe").onsubmit = 
+function subscribe() {
     const Email1 = document.getElementById("Email_subscribe").value;
     if (Email1) 
     {
@@ -31,7 +32,8 @@ document.getElementById("form_subscribe").onsubmit = function subscribe() {
         }).then((message) => {
           if (message == "OK") {
             alert("Subscribed successfully !");
-          } else {
+          } 
+          else {
             alert("Aww Snap! Error occurred while subscribing !");
           }
         });
@@ -39,5 +41,6 @@ document.getElementById("form_subscribe").onsubmit = function subscribe() {
     else{
         alert("Enter an Email ID to subscribe !")
     }
+    document.getElementById("Email_subscribe").value = "";
     
 }

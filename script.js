@@ -50,7 +50,3 @@ function subscribe() {
     
 }
 
-
-// For customized alert box:
-
-window.alert.Body
